@@ -1,0 +1,39 @@
+body
+{
+    font-family: 'Raleway', sans-serif;
+    background-color: #FEFBE7;
+    color: #A0BCC2;
+    font-weight: bold !important;
+}
+
+#score
+{
+    font-size: 25px;
+    float: left;
+    margin-left: 25px;
+}
+
+#timer
+{
+    font-size: 25px;
+    float: right;
+    margin-right: 100px;
+}
+
+#sketch_to_be_drawn
+{
+    font-weight: bold;
+}
+
+h1, h3
+{
+    font-weight: bold;
+}
+
+#show_sketch
+{
+    background-color: #F9EBC8 !important;
+    border: none;
+    color: black;
+    font-weight: 700;
+}
