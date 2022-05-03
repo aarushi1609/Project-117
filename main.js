@@ -81,7 +81,7 @@ function classifyCanvas()
     classifier.classify(canvas, gotResults);
 }
 
-function gotResults()
+function gotResults(error, results)
 {
     if(error)
     {
@@ -93,7 +93,7 @@ function gotResults()
         console.log(results);
         drawn_sketch = results[0].label;
         document.getElementById("your_sketch").innerHTML = "Your Sketch: " + drawn_sketch;
-        document.getElementById("confidence").innerHTML = "Confidence: " + Math.round(result[0].confidence*100)+"%";
+        document.getElementById("confidence").innerHTML = "Confidence: " + Math.round(results[0].confidence*100)+"%";
     }
 }
 
